@@ -176,16 +176,22 @@ h1 {
   font-size: clamp(25px, 8vh, 30px);
   padding: 10px;
 }
-
+.description-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 .toggle-description {
   z-index: 1;
   height: 30%;
-  width: 10%;
+  width: 5px;
+  min-width: none;
   position: absolute;
-  background-color: whitesmoke;
+  background-color: rgb(198, 170, 170);
   top: 35%;
   transition: .4s ease-in-out;
-  right: -5%;
+  left: calc(100% - 5px);
   display: block;
   color: black;
   text-align: left;
@@ -220,12 +226,7 @@ h1 {
   transform: scale(1.1);
 }
 
-.description-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-}
+
 .wedding-container {
   display: flex;
   justify-content: space-between;
